@@ -1,0 +1,30 @@
+.header {
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+
+    &-item {
+      list-style-type: none;
+    }
+    .s {
+      position: relative;
+    }
+    .s::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: orange;
+      width: 80%;
+      height: 3px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+}
